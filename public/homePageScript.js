@@ -1,6 +1,7 @@
 //server
 //let serverUrl="ws://"+document.location.hostname+":3000";
 let serverUrl=`${window.location.protocol === "http:" ? "ws" : "wss"}://${window.location.host}`
+console.log(serverUrl)
 let client=new WebSocket(serverUrl);
 
 //DOM ELEMENTS
